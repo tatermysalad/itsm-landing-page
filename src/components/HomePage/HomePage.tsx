@@ -85,7 +85,7 @@ export default function HomePage() {
                     <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#00B6A0f0] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                         <div className="flex items-center justify-between">
                             <a href="#" className="-m-1.5 p-1.5">
-                                <span className="sr-only">Your Company</span>
+                                <span className="sr-only">{import.meta.env.VITE_COMPANY_NAME}</span>
                                 <a href={import.meta.env.VITE_LOGO_REDIRECT}>
                                     <img alt="Logo" src={logoPathWhite} className="h-10" />
                                 </a>
@@ -123,7 +123,7 @@ export default function HomePage() {
                     <div className="py-10 sm:py-16">
                         <div className="mx-auto max-w-7xl px-6 lg:px-8">
                             <div className="mx-auto max-w-2xl text-center">
-                                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">{import.meta.env.VITE_COMPANY_NAME}</h1>
+                                <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">{import.meta.env.VITE_COMPANY_NAME}</h1>
                                 <p className="mt-6 text-lg leading-8 text-gray-600">{import.meta.env.VITE_COMPANY_ABOUT}</p>
                                 <div className="mt-8">
                                     <a
@@ -158,8 +158,8 @@ export default function HomePage() {
                             className="relative left-[calc(70%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#00B6A0] to-[#00B6A0] opacity-20 sm:left-[calc(70%-30rem)] sm:w-[72.1875rem]"
                         />
                     </div>
-                    <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
-                    <dl className="mt-10 space-y-8 divide-y divide-gray-900/10">
+                    <h2 className="pt-2 text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
+                    <dl className="mt-2 space-y-8 divide-y divide-gray-900/10">
                         {faqs.map((faq: FAQ, index: number) => (
                             <a href={faq.url} key={index}>
                                 <div className="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
