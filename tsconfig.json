@@ -4,7 +4,8 @@
     "types": [
       "vite/client"
     ],
-    "target": "ESNext"
+    "target": "ESNext",
+    "noImplicitAny": false
   },
   "references": [
     {
