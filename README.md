@@ -15,6 +15,7 @@ Example deployed site with Vercel: [itsm-landing-page.vercel.app](https://itsm-l
 1. Fill in values for the look and set up of the page
 1. Run with `npm run dev`
 1. Upon deployment make sure the env variables are filled in which correspond with your page requirements
+1. The build command is `tsc -b && vite build`
 
 ## Tech Stack
 - Typescript
